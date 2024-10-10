@@ -26,7 +26,7 @@ SELECT * FROM graduates;
 
 SELECT employees.name, employees.Company, companies.date FROM employees Inner join companies ON employees.Company=companies.name;
 SELECT employees.name FROM employees Inner join companies ON employees.Company=companies.name and companies.Date < 2000;
-SELECT companies.name FROM companies Inner join employees ON employees.Company=companies.name and employees.Role='Graphic Designer';
+SELECT employees.name FROM companies Inner join employees ON employees.Company=companies.name and employees.Role='Graphic Designer';
 
 select name from students where points=(SELECT MAX(points) from students);
 select AVG(points) from students;
