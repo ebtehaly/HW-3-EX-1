@@ -20,7 +20,9 @@ CREATE TABLE graduates(
 
 INSERT INTO graduates(Name, Age, Gender, Points) SELECT Name, Age, Gender, Points FROM Students WHERE Students.Name='Layal';
 UPDATE graduates SET Graduation='08-09-2018' WHERE Name='Layal';
-DELETE FROM graduates WHERE Name='Layal';
+DELETE FROM Students WHERE Name='Layal';
+SELECT * FROM Students;
+SELECT * FROM graduates;
 
 SELECT employees.name, employees.Company, companies.date FROM employees Inner join companies ON employees.Company=companies.name;
 SELECT employees.name FROM employees Inner join companies ON employees.Company=companies.name and companies.Date < 2000;
