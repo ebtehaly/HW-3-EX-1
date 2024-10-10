@@ -5,6 +5,7 @@ SELECT Points FROM Students WHERE Name='Alex';
 INSERT INTO Students VALUES(7, 'Ebtehal', '22', 'F', 700);
 SELECT * FROM Students WHERE ID = 7;
 UPDATE Students SET Points = 500 WHERE Name='Basma';
+SELECT Points FROM Students WHERE Name='Basma';
 UPDATE Students SET Points = 100 WHERE Name='Alex';
 
 CREATE TABLE graduates(
