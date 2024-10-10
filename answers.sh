@@ -7,6 +7,7 @@ SELECT * FROM Students WHERE ID = 7;
 UPDATE Students SET Points = 500 WHERE Name='Basma';
 SELECT Points FROM Students WHERE Name='Basma';
 UPDATE Students SET Points = 100 WHERE Name='Alex';
+SELECT Points FROM Students WHERE Name='Alex';
 
 CREATE TABLE graduates(
     ID INTEGER  PRIMARY KEY AUTOINCREMENT,
